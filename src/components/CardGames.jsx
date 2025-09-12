@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import '../styles/CardGames.css'
 
 function CardGames() {
   return (
-    <div>CardGames</div>
+    <div>
+      <div className='gameCard'>
+        <img src="" alt="" />
+        <h3>Wordle</h3>
+        <Link to={'/Wordle'}><button ></button></Link>
+      </div>
+    </div>
   )
 }
 

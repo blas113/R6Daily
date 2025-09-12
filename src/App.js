@@ -1,11 +1,16 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Wordle from './pages/Wordle';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/wordle" element={<Wordle />} />
+      </Routes>
+    </Router>
   );
 }
 

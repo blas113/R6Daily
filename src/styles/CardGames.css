@@ -1,0 +1,13 @@
+.gameCard{
+    border: 2px solid rgb(255, 0, 0);
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(254, 0, 0, 0.1);
+    border-radius: 10px;
+}
