@@ -8,7 +8,7 @@ function CardGames() {
       <div className='gameCard'>
         <img src="" alt="" />
         <h3>Wordle</h3>
-        <Link to={'/Wordle'}><button ></button></Link>
+        <Link to={'/Wordle'}><button > PLAY</button></Link>
       </div>
     </div>
   )
