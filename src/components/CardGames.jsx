@@ -5,11 +5,11 @@ import '../styles/CardGames.css'
 function CardGames() {
   return (
     <div>
-      <div className='gameCard'>
-        <img src="" alt="" />
-        <h3>Wordle</h3>
-        <Link to={'/Wordle'}><button > PLAY</button></Link>
-      </div>
+     <Link to={'/Wordle'}> <div className='gameCard'>
+        <img src="../commons/img/images.jpg" alt="" />
+        <h3>PLAY</h3>
+        <h4>R6Daily Wordle</h4>
+      </div></Link>
     </div>
   )
 }
