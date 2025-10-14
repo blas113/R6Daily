@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/Wordle.css'
 
 export default function Wordle() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -6,18 +7,18 @@ export default function Wordle() {
 
   if (!isPlaying) {
     return (
-      <div className="bg-white shadow-xl rounded-2xl p-6 w-96 mx-auto mt-20">
-        <h2 className="text-xl font-bold mb-2 text-center">Wordle</h2>
-        <p className="text-gray-600 text-sm mb-4 text-center">
+      <div className="setup-container">
+        <h2 >Wordle</h2>
+        <p >
           Adivina la palabra del día en la menor cantidad de intentos posible.
         </p>
 
-        <div className="mb-4">
-          <label className="block mb-2 font-semibold text-gray-700">
+        <div>
+          <label>
             Modo de juego:
           </label>
-          <div className="flex gap-4">
-            <label className="flex items-center gap-2">
+          <div >
+            <label>
               <input
                 type="radio"
                 value="no-timer"
@@ -40,7 +41,6 @@ export default function Wordle() {
 
         <button
           onClick={() => setIsPlaying(true)}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
         >
           Comenzar
         </button>
@@ -51,7 +51,7 @@ export default function Wordle() {
 
   return (
     <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Juego Wordle</h2>
+      <h2>Juego Wordle</h2>
       <p>Modo: {timerMode === "timer" ? "Con timer" : "Sin timer"}</p>
 
       {/* Aquí iría tu lógica de Wordle original */}
